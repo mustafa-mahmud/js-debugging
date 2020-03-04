@@ -325,6 +325,7 @@
 	<script>
 		"use strict";
 		$(document).ready(function () {
+			//another comment
 			// we're in strict mode - this will throw a ReferenceError
 			var accidentalGlobal = 'this is bad';
 
@@ -338,9 +339,11 @@
 					$("#colorbox").swipe({
 						swipeLeft: function (event, direction, distance, duration, fingerCount) {
 							jQuery.colorbox.prev();
+							console.log('%c Swipe Left', bigErrorStyle);
 						},
 						swipeRight: function (event, direction, distance, duration, fingerCount) {
 							jQuery.colorbox.next();
+							console.count('Swipe Right !!!');
 						}
 					});
 				}
